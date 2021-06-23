@@ -39,33 +39,45 @@ class SlideContent extends Component {
         >
           <div>
             <img alt="" src={photo1} />
+            <h2 className="pic-hover">Costa-Rican Beach Side</h2>
           </div>
           <div>
             <img alt="" src={photo2} />
+            <h2 className="pic-hover">
+              The Sun sets on the Indian sub-continent
+            </h2>
           </div>
           <div>
             <img alt="" src={photo4} />
+            <h2 className="pic-hover">Hights of the Himalaya</h2>
           </div>
           <div>
             <img alt="" src={photo5} />
+            <h2 className="pic-hover">Sleepy Tree Frog</h2>
           </div>
           <div>
             <img alt="" src={photo6} />
+            <h2 className="pic-hover">He's Lookin' at you kid</h2>
           </div>
           <div>
             <img alt="" src={photo7} />
+            <h2 className="pic-hover">Glen Coe</h2>
           </div>
           <div>
             <img alt="" src={photo8} />
+            <h2 className="pic-hover">The Boys of Bombay</h2>
           </div>
           <div>
             <img alt="" src={photo9} />
+            <h2 className="pic-hover">A quiet bridge in the highlands</h2>
           </div>
           <div>
             <img alt="" src={photo10} />
+            <h2 className="pic-hover">Lost In The Lakes</h2>
           </div>
           <div>
             <img alt="" src={photo3} />
+            <h2 className="pic-hover">Mt.Bromo, East Java</h2>
           </div>
         </Carousel>
       </div>

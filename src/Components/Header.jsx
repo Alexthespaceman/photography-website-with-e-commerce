@@ -5,7 +5,7 @@ function Header(props) {
   return (
     <div className="header">
       <Link className="link" to="/">
-        <div className="header-title">Alex Tristram Photography</div>
+        <div className="header-title">A.R.T. Photography</div>
       </Link>
       <div className="navigation">
         <ul className="list">
