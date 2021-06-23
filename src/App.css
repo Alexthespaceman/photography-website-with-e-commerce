@@ -12,7 +12,7 @@
 
 .header {
   border: green 3px solid;
-  height: 200px;
+  height: 160px;
 }
 
 .header-title {
@@ -50,13 +50,13 @@
   transition: 1s;
 }
 
-/* HEADER STOP */
+/* HEADER ENDS */
 
 .landing-page {
   border: blue 3px solid;
   height: 600px;
   position: absolute;
-  z-index: 10;
+  /* z-index: 10; */
 }
 
 .all-photos {
@@ -67,13 +67,41 @@
   border: purple 3px solid;
 }
 
+/*  SLIDE CONTENT STARTS  */
+
+.carousel-wrapper {
+  left: 0px;
+  width: 1000px;
+  background-color: white;
+  position: relative;
+  padding: 5px;
+  margin-left: 450px;
+}
+
+.thumbs-wrapper {
+  display: none;
+}
+
+.carousel-status {
+  display: none;
+}
+.control-dots {
+  display: none;
+}
+.slider-wrapper {
+  position: relative;
+  left: 20px;
+}
+
+/*  SLIDE CONTENT ENDS  */
+
 /* FOOTER STARTS */
 .footer {
   height: 50px;
   border: black solid 3px;
   position: fixed;
   bottom: 0;
-  z-index: 30;
+  /* z-index: 30; */
   background-color: white;
   width: 98%;
 }
@@ -90,7 +118,7 @@
   transition: 1s;
 }
 
-/* FOOTER STOPS */
+/* FOOTER ENDS */
 
 /* .App-logo {
   height: 40vmin;
