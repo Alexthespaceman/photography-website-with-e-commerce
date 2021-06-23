@@ -1,4 +1,7 @@
+import { Router } from "@reach/router";
 import "./App.css";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
 import AllPhotographsScreen from "./Screens/AllPhotographsScreen";
 import ContactScreen from "./Screens/ContactScreen";
 import LandingScreen from "./Screens/LandingScreen";
@@ -6,9 +9,13 @@ import LandingScreen from "./Screens/LandingScreen";
 function App() {
   return (
     <div className="App">
-      <LandingScreen />
-      <AllPhotographsScreen />
-      <ContactScreen />
+      <Header />
+      <Router>
+        <LandingScreen path="/" />
+        <AllPhotographsScreen path="all-photos" />
+        <ContactScreen path="contact-page" />
+      </Router>
+      <Footer />
     </div>
   );
 }

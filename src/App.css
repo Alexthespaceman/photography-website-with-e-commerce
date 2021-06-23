@@ -1,17 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+
 .App {
   text-align: center;
   border: red 3px solid;
-  height: 1000px;
+  height: 800px;
+  position: relative;
+  z-index: 5;
 }
+
+/* HEADER START */
 
 .header {
   border: green 3px solid;
   height: 200px;
 }
 
+.header-title {
+  font-family: "Crimson Text", serif;
+  font-size: 4rem;
+  color: rgb(72, 109, 72);
+}
+
+.navigation {
+  text-align: center;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-flow: space-evenly;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list-child {
+  flex-grow: 4;
+  margin: 30px;
+  font-family: "Crimson Text", serif;
+  font-size: 1.3rem;
+  color: rgb(72, 109, 72);
+}
+
+.list-child:hover {
+  color: black;
+  transition: 1s;
+}
+
+/* HEADER STOP */
+
 .landing-page {
   border: blue 3px solid;
-  height: 1000px;
+  height: 600px;
+  position: absolute;
+  z-index: 10;
 }
 
 .all-photos {
@@ -21,6 +66,31 @@
 .contact-screen {
   border: purple 3px solid;
 }
+
+/* FOOTER STARTS */
+.footer {
+  height: 50px;
+  border: black solid 3px;
+  position: fixed;
+  bottom: 0;
+  z-index: 30;
+  background-color: white;
+  width: 98%;
+}
+
+.number {
+  top: 50%;
+  font-family: "Crimson Text", serif;
+  font-size: 1.5rem;
+  color: rgb(72, 109, 72);
+}
+
+.number:hover {
+  color: black;
+  transition: 1s;
+}
+
+/* FOOTER STOPS */
 
 /* .App-logo {
   height: 40vmin;
