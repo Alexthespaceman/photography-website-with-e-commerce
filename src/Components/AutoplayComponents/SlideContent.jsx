@@ -6,8 +6,11 @@ import photo1 from "../../Images/costaBeach.jpeg";
 import photo5 from "../../Images/costaFrog2.jpeg";
 import photo6 from "../../Images/costaSlothe3.jpeg";
 import photo7 from "../../Images/glenCoe.jpeg";
+import photo11 from "../../Images/indiaGoa.jpeg";
+import photo12 from "../../Images/indiajaipaw.jpeg";
 import photo8 from "../../Images/indianBombayBoys.jpeg";
 import photo2 from "../../Images/indiaSunset2.jpeg";
+import photo13 from "../../Images/indiaTag.jpeg";
 import photo10 from "../../Images/lakes3.jpeg";
 import photo4 from "../../Images/mountains.jpeg";
 import photo9 from "../../Images/scotlandBridge.jpeg";
@@ -79,10 +82,21 @@ class SlideContent extends Component {
             <img alt="" src={photo3} />
             <h2 className="pic-hover">Mt.Bromo, East Java</h2>
           </div>
+          <div>
+            <img alt="" src={photo11} />
+            <h2 className="pic-hover">Rolling hills of Goa, India</h2>
+          </div>
+          <div>
+            <img alt="" src={photo12} />
+            <h2 className="pic-hover">SLiver of blue, in a world of orange</h2>
+          </div>
+          <div>
+            <img alt="" src={photo13} />
+            <h2 className="pic-hover">Sunrise at the Taj</h2>
+          </div>
         </Carousel>
       </div>
     );
   }
 }
-
 export default SlideContent;
