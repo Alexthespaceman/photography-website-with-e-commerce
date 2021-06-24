@@ -4,10 +4,8 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import AllPhotographsScreen from "./Screens/AllPhotographsScreen";
 import ContactScreen from "./Screens/ContactScreen";
-import {
-  default as FilterPhotosPage,
-  default as LandingScreen,
-} from "./Screens/LandingScreen";
+import FilterPhotosPage from "./Screens/FilterPhotosPage";
+import LandingScreen from "./Screens/LandingScreen";
 
 function App() {
   return (
