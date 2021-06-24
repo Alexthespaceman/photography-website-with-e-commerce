@@ -4,7 +4,10 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import AllPhotographsScreen from "./Screens/AllPhotographsScreen";
 import ContactScreen from "./Screens/ContactScreen";
-import LandingScreen from "./Screens/LandingScreen";
+import {
+  default as FilterPhotosPage,
+  default as LandingScreen,
+} from "./Screens/LandingScreen";
 
 function App() {
   return (
@@ -12,8 +15,9 @@ function App() {
       <Header />
       <Router>
         <LandingScreen path="/" />
-        <AllPhotographsScreen path="all-photos" />
-        <ContactScreen path="contact-page" />
+        <AllPhotographsScreen path="/all-photos" />
+        <ContactScreen path="/contact-page" />
+        <FilterPhotosPage path="/:country" />
       </Router>
       <Footer />
     </div>
