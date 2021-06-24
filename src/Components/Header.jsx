@@ -11,9 +11,9 @@ function Header(props) {
       </Link>
       <div className="navigation">
         <ul className="list">
-          <Link className="link" to="">
-            <DropdownFunc />
-          </Link>
+          <p className="filter-p">Filter photos by country:</p>
+          <DropdownFunc />
+          <Link className="link" to=""></Link>
           <Link className="link" to="all-photos">
             <li className="list-child">All Photographs</li>
           </Link>
