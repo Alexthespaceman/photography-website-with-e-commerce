@@ -5,19 +5,19 @@ import "react-dropdown/style.css";
 
 function DropdownFunc(props) {
   const options = [
-    <Link to="all-photos/indo">Indonesia</Link>,
-    <Link to="all-photos/india">India</Link>,
-    <Link to="all-photos/vietnam">Vietnam</Link>,
-    <Link to="all-photos/Japan">Japan</Link>,
-    <Link to="all-photos/Thailand">Thailand</Link>,
-    <Link to="all-photos/UK">UK</Link>,
-    <Link to="all-photos/United-states">United states</Link>,
-    <Link to="all-photos/Singapore">Singapore</Link>,
-    <Link to="all-photos/Costa-Rica">Costa Rica</Link>,
-    <Link to="all-photos/Europe">Europe</Link>,
-    <Link to="all-photos/Malay">Malaysia</Link>,
-    <Link to="all-photos/vietnam">Mexico</Link>,
-    <Link to="all-photos/Nepal">Nepal</Link>,
+    <Link to="/indonesia">Indonesia</Link>,
+    <Link to="/india">India</Link>,
+    <Link to="/vietnam">Vietnam</Link>,
+    <Link to="/Japan">Japan</Link>,
+    <Link to="/Thailand">Thailand</Link>,
+    <Link to="/UK">UK</Link>,
+    <Link to="/United-states">United states</Link>,
+    <Link to="/Singapore">Singapore</Link>,
+    <Link to="/costa">Costa Rica</Link>,
+    <Link to="/Europe">Europe</Link>,
+    <Link to="/Malay">Malaysia</Link>,
+    <Link to="/vietnam">Mexico</Link>,
+    <Link to="/Nepal">Nepal</Link>,
   ];
 
   const defaultOption = options[0];
@@ -25,6 +25,9 @@ function DropdownFunc(props) {
   return (
     <div>
       <Dropdown
+        controlClassName="drop-down-style"
+        menuClassName="drop-down-place-holder"
+        className="drop-down"
         onChange={defaultOption}
         options={options}
         value={defaultOption}
