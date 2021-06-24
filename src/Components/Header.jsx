@@ -1,5 +1,7 @@
 import { Link } from "@reach/router";
 import React from "react";
+import "react-dropdown/style.css";
+import DropdownFunc from "../Functions/Dropdown";
 
 function Header(props) {
   return (
@@ -10,7 +12,7 @@ function Header(props) {
       <div className="navigation">
         <ul className="list">
           <Link className="link" to="">
-            <li className="list-child">Filter by country</li>
+            <DropdownFunc />
           </Link>
           <Link className="link" to="all-photos">
             <li className="list-child">All Photographs</li>
