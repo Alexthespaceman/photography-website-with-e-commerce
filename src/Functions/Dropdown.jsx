@@ -16,7 +16,7 @@ function DropdownFunc(props) {
     <Link to="/costa">Costa Rica</Link>,
     <Link to="/Europe">Europe</Link>,
     <Link to="/Malay">Malaysia</Link>,
-    <Link to="/vietnam">Mexico</Link>,
+    <Link to="/mexico">Mexico</Link>,
     <Link to="/Nepal">Nepal</Link>,
   ];
 
