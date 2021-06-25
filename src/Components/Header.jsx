@@ -7,8 +7,9 @@ function Header(props) {
   return (
     <div className="header">
       <Link className="link" to="/">
-        <div className="header-title">A.R.T. Photography</div>
+        <div className="header-title">A.R.T Photography</div>
       </Link>
+      <h2 className="header-title1">By Alexander Richard Tristram</h2>
       <div className="navigation">
         <ul className="list">
           <p className="filter-p">Filter photos by country:</p>
