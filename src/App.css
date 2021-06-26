@@ -176,24 +176,29 @@
 
 .filtered-photo-box {
   background-color: #f0ead2;
-  margin: 100px;
+  /* margin: 100px; */
+  margin-bottom: -550px;
+  top: 200px;
 }
 
 .filtered-desription {
-  border: red 3px solid;
   position: relative;
-  width: 1098px;
+  width: 1103px;
+  height: 135px;
   transition: 0.8s;
-  top: 100px;
+  top: -755px;
+  left: 160px;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  opacity: 0%;
+  border-radius: 10px;
 }
-/* .filtered-desription:hover {
+.filtered-desription:hover {
   transition: 0.8s;
   color: white;
   background-color: black;
   opacity: 70%;
-  position: relative;
-  border: red 3px solid;
-} */
+}
 
 /*  FILTERED PHOTOS PAGE ENDS  */
 
