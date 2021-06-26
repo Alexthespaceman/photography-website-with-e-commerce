@@ -401,7 +401,7 @@ class FilterPhotosPage extends Component {
           .map((place) => {
             return (
               <div className="filtered-photo-box">
-                <img className="photo-frame" src={place.image} />
+                <img className="photo-frame" src={place.image}></img>
                 <p className="filtered-desription">{place.description}</p>
               </div>
             );
