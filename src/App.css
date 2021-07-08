@@ -193,6 +193,7 @@
   opacity: 0%;
   border-radius: 10px;
 }
+
 .filtered-desription:hover {
   transition: 0.8s;
   color: white;
