@@ -12,14 +12,21 @@ function Header(props) {
       <h2 className="header-title1">By Alexander Richard Tristram</h2>
       <div className="navigation">
         <ul className="list">
-          <p className="filter-p">Filter photos by country:</p>
-          <DropdownFunc />
-          <Link className="link" to=""></Link>
+          <button
+            className="list-child"
+            onClick={() => props.setDisplay("true")}
+          >
+            Filter photos by country:
+          </button>
+          <DropdownFunc display={props.display} />
           <Link className="link" to="all-photos">
             <li className="list-child">All Photographs</li>
           </Link>
           <Link className="link" to="contact-page">
             <li className="list-child">Contact Alex</li>
+          </Link>
+          <Link className="link" to="payment-page">
+            <li className="list-child">purchase here</li>
           </Link>
         </ul>
       </div>

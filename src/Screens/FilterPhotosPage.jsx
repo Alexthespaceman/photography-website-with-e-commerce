@@ -470,7 +470,7 @@ class FilterPhotosPage extends Component {
               <div className="filtered-photo-box">
                 <img className="photo-frame" src={place.image}></img>
                 <p className="filtered-desription">
-                  {place.description} <br /> {place.price}
+                  {place.description} <br />
                 </p>
               </div>
             );

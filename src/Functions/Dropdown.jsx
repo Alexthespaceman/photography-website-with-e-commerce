@@ -21,13 +21,14 @@ function DropdownFunc(props) {
   ];
 
   const defaultOption = options[0];
-
+  const { display } = props;
+  console.log(display);
   return (
     <div>
       <Dropdown
+        className={`drop-down${display === "true" ? "-yes" : ""}`}
         controlClassName="drop-down-style"
         menuClassName="drop-down-place-holder"
-        className="drop-down"
         onChange={defaultOption}
         options={options}
         value={defaultOption}

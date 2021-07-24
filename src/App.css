@@ -40,10 +40,10 @@
 .list {
   position: relative;
   top: -20px;
-  left: 5%;
+  right: 4%;
   list-style-type: none;
   display: flex;
-  flex-flow: space-evenly;
+  /* flex-flow: space-evenly; */
   flex-direction: row;
   justify-content: center;
 }
@@ -53,23 +53,33 @@
 }
 
 .list-child {
-  padding-right: 50px;
-  flex-grow: 4;
+  /* padding-right: 50px; */
+  /* flex-grow: 3; */
   margin: 30px;
   font-family: "Crimson Text", serif;
   font-size: 1.3rem;
   color: #6c584c;
+  transition: 0.5s;
 }
 
 .list-child:hover {
-  color: black;
+  color: red;
   transition: 1s;
 }
 
 .drop-down {
+  display: none;
+  /* position: absolute;
+  top: 60px;
+  left: -180px;
+  border: none;
+  width: 100px;
+  height: 0px; */
+}
+.drop-down-yes {
   position: absolute;
   top: 60px;
-  left: -110px;
+  left: -180px;
   border: none;
   width: 100px;
   height: 0px;
