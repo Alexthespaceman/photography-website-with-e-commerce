@@ -6,21 +6,21 @@
   height: 800px;
   position: relative;
   z-index: 5;
-  background-color: #f0ead2;
+  background-color: white;
 }
 
 /* HEADER START */
 
 .header {
   /* border: green 3px solid; */
-  height: 160px;
-  background-color: #f0ead2;
+  height: 140px;
+  background-color: #000814;
 }
 
 .header-title {
   font-family: "Crimson Text", serif;
   font-size: 4rem;
-  color: #6c584c;
+  color: white;
   /* padding: -30px; */
 }
 .header-title1 {
@@ -28,8 +28,26 @@
   top: -15px;
   font-family: "Crimson Text", serif;
   font-size: 1rem;
-  color: #6c584c;
+  color: white;
   /* padding: -30px; */
+}
+
+.basket {
+  position: absolute;
+  right: 200px;
+  top: 30px;
+  flex-direction: row;
+  width: 50px;
+  height: 50px;
+}
+
+.basket-btn {
+  color: white;
+  background: none;
+  border: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
 }
 
 .navigation {
@@ -39,13 +57,16 @@
 
 .list {
   position: relative;
-  top: -20px;
-  right: 4%;
+  /* top: -20px; */
+  /* right: 4%; */
   list-style-type: none;
   display: flex;
   /* flex-flow: space-evenly; */
   flex-direction: row;
   justify-content: center;
+  background-color: #001d3d;
+  height: 90px;
+  top: -15px;
 }
 
 .link {
@@ -58,12 +79,12 @@
   margin: 30px;
   font-family: "Crimson Text", serif;
   font-size: 1.3rem;
-  color: #6c584c;
+  color: white;
   transition: 0.5s;
 }
 
 .list-child:hover {
-  color: red;
+  color: white;
   transition: 1s;
 }
 
@@ -106,8 +127,27 @@
 /* HEADER ENDS */
 
 .landing-page {
-  height: 750px;
-  background-color: #f0ead2;
+  height: 140px;
+  background-color: #001d3d;
+}
+.landing-page1 {
+  height: 140px;
+  background-color: #003566;
+}
+.landing-page2 {
+  height: 140px;
+  background-color: #1361aa;
+  /* background-color: #ffc300; */
+}
+.landing-page3 {
+  height: 160px;
+  background-color: #003566;
+  /* background-color: #ffd60a; */
+}
+.landing-page4 {
+  height: 200px;
+  background-color: #001d3d;
+  /* background-color: #ffda20; */
 }
 
 .all-photos {
@@ -128,7 +168,7 @@
   padding: 5px;
   margin-left: 190px;
   transition: 0.6s;
-  background-color: #f0ead2;
+  background-color: white;
 }
 
 .carousel-wrapper:hover {
@@ -142,7 +182,7 @@
   top: -20px;
   width: 900px;
   opacity: 0%;
-  height: 667px;
+  height: 666px;
   width: 1000px;
   padding-top: 300px;
   transition: 0.6s;
@@ -175,8 +215,8 @@
 .filtered-photos-title {
   /* width: 100%; */
   height: 5000px;
-  background-color: #f0ead2;
-  margin-top: 100px;
+  /* background-color: #ffda20; */
+  margin-top: 75px;
 }
 
 .photo-frame {
@@ -185,10 +225,10 @@
 }
 
 .filtered-photo-box {
-  background-color: #f0ead2;
+  background-color: #0077b6;
   /* margin: 100px; */
   margin-bottom: -550px;
-  top: 200px;
+  /* top: 120px; */
 }
 
 .filtered-desription {
@@ -221,7 +261,7 @@
   bottom: 0;
   /* z-index: 30; */
 
-  background-color: #f0ead2;
+  background-color: #000712;
   width: 100%;
 }
 
@@ -229,11 +269,12 @@
   top: 50%;
   font-family: "Crimson Text", serif;
   font-size: 1.5rem;
-  color: #6c584c;
+  color: #ffc300;
+  transition: 1s;
 }
 
 .number:hover {
-  color: black;
+  color: #ffda20;
   transition: 1s;
 }
 

@@ -1,24 +1,30 @@
 import { Link } from "@reach/router";
 import React from "react";
 import "react-dropdown/style.css";
-import DropdownFunc from "../Functions/Dropdown";
+import { IoBasket } from "react-icons/io5";
 
 function Header(props) {
   return (
     <div className="header">
+      <div className="basket">
+        <IoBasket className="basket-btn">
+          <button onClick={console.log("clicked")}></button>
+        </IoBasket>
+      </div>
       <Link className="link" to="/">
         <div className="header-title">A.R.T Photography</div>
       </Link>
-      <h2 className="header-title1">By Alexander Richard Tristram</h2>
+      <h2 className="header-title1">Alexander Richard Tristram</h2>
+
       <div className="navigation">
         <ul className="list">
-          <button
+          {/* <button
             className="list-child"
             onClick={() => props.setDisplay("true")}
           >
             Filter photos by country:
           </button>
-          <DropdownFunc display={props.display} />
+          <DropdownFunc display={props.display} /> */}
           <Link className="link" to="all-photos">
             <li className="list-child">All Photographs</li>
           </Link>
