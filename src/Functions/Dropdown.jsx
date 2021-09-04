@@ -22,7 +22,6 @@ function DropdownFunc(props) {
 
   const defaultOption = options[0];
   const { display } = props;
-  console.log(display);
   return (
     <div>
       <Dropdown

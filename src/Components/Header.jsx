@@ -1,15 +1,27 @@
 import { Link } from "@reach/router";
 import React from "react";
 import "react-dropdown/style.css";
+import { BiCircle } from "react-icons/bi";
 import { IoBasket } from "react-icons/io5";
 
 function Header(props) {
+  const style = { color: "white", fontSize: "1em" };
   return (
     <div className="header">
       <div className="basket">
-        <IoBasket className="basket-btn">
-          <button onClick={console.log("clicked")}></button>
-        </IoBasket>
+        <Link className="link" to="basket-page">
+          <IoBasket className="basket-btn"></IoBasket>
+          {props.number > 0 ? (
+            <div>
+              <p className="number1">{props.number} </p>
+              <BiCircle className="circle" style={style}>
+                {" "}
+              </BiCircle>
+            </div>
+          ) : (
+            ""
+          )}
+        </Link>
       </div>
       <Link className="link" to="/">
         <div className="header-title">A.R.T Photography</div>
@@ -31,7 +43,7 @@ function Header(props) {
           <Link className="link" to="contact-page">
             <li className="list-child">Contact Alex</li>
           </Link>
-          <Link className="link" to="payment-page">
+          <Link className="link" to="basket-page">
             <li className="list-child">purchase here</li>
           </Link>
         </ul>

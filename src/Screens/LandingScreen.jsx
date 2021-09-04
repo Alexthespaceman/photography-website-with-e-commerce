@@ -12,6 +12,7 @@ class LandingScreen extends Component {
         <div className="landing-page2"></div>
         <div className="landing-page3"></div>
         <div className="landing-page4"></div>
+        <div className="landing-page5"></div>
       </div>
     );
   }

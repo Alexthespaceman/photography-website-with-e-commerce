@@ -13,8 +13,12 @@
 
 .header {
   /* border: green 3px solid; */
-  height: 140px;
+  height: 110px;
   background-color: #000814;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .header-title {
@@ -50,7 +54,29 @@
   height: 30px;
 }
 
+.basket-hover-button {
+  background: none;
+  border: none;
+  color: rgb(45, 120, 201);
+}
+
+.circle {
+  background-color: red;
+  border-radius: 25px;
+  z-index: 0;
+}
+
+.number1 {
+  position: absolute;
+  z-index: 10;
+  color: white;
+  font-size: 9px;
+  left: 23px;
+  top: -6px;
+}
+
 .navigation {
+  top: -15px;
   text-align: center;
   position: relative;
 }
@@ -84,7 +110,7 @@
 }
 
 .list-child:hover {
-  color: white;
+  color: #83a8df;
   transition: 1s;
 }
 
@@ -147,6 +173,11 @@
 .landing-page4 {
   height: 200px;
   background-color: #001d3d;
+  /* background-color: #ffda20; */
+}
+.landing-page5 {
+  height: 200px;
+  background-color: #03111f;
   /* background-color: #ffda20; */
 }
 
@@ -251,6 +282,119 @@
   opacity: 70%;
 }
 
+/* CONTACT PAGE BEGINS */
+.contact {
+  height: 800px;
+  background-color: #4a94dd;
+  /* opacity: 90%; */
+  position: absolute;
+  /* top: 3750px; */
+  width: 100%;
+  position: relative;
+}
+
+.box {
+  position: relative;
+  bottom: -30%;
+  right: -25%;
+  text-align: center;
+  width: 50%;
+  height: 40%;
+  background-color: #042a50;
+  border-radius: 10px;
+  padding: 20px;
+  padding-left: -30px;
+}
+
+.title4 {
+  font-weight: lighter;
+  color: #2a9d8f;
+  font-size: 44px;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 0.15em;
+}
+
+form {
+  max-width: 600px;
+  text-align: center;
+}
+
+#input-name {
+  position: absolute;
+  margin: 10px;
+  height: 32px;
+  border-radius: 10px;
+  top: 29%;
+  left: 15%;
+  width: 30%;
+}
+
+#input-subject {
+  margin: 10px;
+  height: 32px;
+  border-radius: 10px;
+  position: absolute;
+  top: 41%;
+  left: 15%;
+  width: 30%;
+}
+
+#input-email {
+  margin: 10px;
+  height: 32px;
+  border-radius: 10px;
+  position: absolute;
+  top: 52%;
+  left: 15%;
+  width: 30%;
+}
+
+#input-message {
+  border-radius: 10px;
+  width: 200px;
+  height: 115px;
+  position: absolute;
+  top: 116px;
+  right: 25%;
+  border-style: inset;
+}
+
+#input-submit {
+  position: absolute;
+  color: white;
+  background: #0a6dd1;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 30px;
+  width: 59%;
+  right: 25%;
+  top: 70%;
+}
+
+textarea {
+  height: 126px;
+}
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right {
+  width: 50%;
+}
+
+.left {
+  margin-right: 2%;
+}
+
+/* CONTACT PAGE ENDS */
+
 /*  FILTERED PHOTOS PAGE ENDS  */
 
 /* FOOTER STARTS */
@@ -269,12 +413,12 @@
   top: 50%;
   font-family: "Crimson Text", serif;
   font-size: 1.5rem;
-  color: #ffc300;
+  color: white;
   transition: 1s;
 }
 
 .number:hover {
-  color: #ffda20;
+  color: #83a8df;
   transition: 1s;
 }
 
