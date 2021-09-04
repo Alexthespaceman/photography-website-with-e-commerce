@@ -1,16 +1,17 @@
 function PaymentScreen(props) {
+  let { countries, photoNumbers } = props;
   return (
     <div className="filtered-photos-title">
-      {props.countries
-        .filter((place) => {
-          return place.photo === props.photoNumbers;
+      {countries
+        .filter((item) => {
+          return photoNumbers.includes(item.photo);
         })
-        .map((place) => {
+        .map((country) => {
           return (
             <div className="filtered-photo-box">
-              <img alt="pic" className="photo-frame" src={place.image}></img>
+              <img alt="pic" className="photo-frame" src={country.image}></img>
               <p className="filtered-desription">
-                {place.description} <br />
+                {country.description} <br />
               </p>
             </div>
           );

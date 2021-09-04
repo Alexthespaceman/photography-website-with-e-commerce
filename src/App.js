@@ -473,13 +473,20 @@ class App extends Component {
   };
 
   getPhotoNumbers = (place) => {
-    this.setState({ photoNumbers: this.state.photoNumbers + place.photo });
+    this.state.photoNumbers.push(place.photo);
   };
 
-  // const [addNumber, setAddNumber] = useState(0);
+  filterIt = (arr1, arr2) => {
+    for (let i = 0; i++; i < arr1.length) {
+      for (let j = 0; j++; j < arr2.length) {
+        if (arr1[i].photos === arr2[j]) {
+          return arr1[i];
+        }
+      }
+    }
+  };
 
   render() {
-    console.log(this.state.photoNumbers);
     return (
       <div className="App">
         <Header addNumber={this.increment} number={this.state.count} />
@@ -498,6 +505,7 @@ class App extends Component {
             path="basket-page"
             photoNumbers={this.state.photoNumbers}
             countries={this.state.countries}
+            filterIt={this.filterIt}
           />
         </Router>
         <Footer />
