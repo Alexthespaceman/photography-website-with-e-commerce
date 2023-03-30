@@ -25,7 +25,7 @@ function DropdownFunc(props) {
   return (
     <div>
       <Dropdown
-        className={`drop-down${display === "true" ? "-yes" : ""}`}
+        className={`drop-down${display === true ? "-yes" : ""}`}
         controlClassName="drop-down-style"
         menuClassName="drop-down-place-holder"
         onChange={defaultOption}
@@ -33,6 +33,7 @@ function DropdownFunc(props) {
         value={defaultOption}
         placeholder="Filter by country"
       />
+      {console.log(display)}
     </div>
   );
 }
