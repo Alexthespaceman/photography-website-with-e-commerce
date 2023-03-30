@@ -3,11 +3,18 @@ import React from "react";
 import "react-dropdown/style.css";
 import { BiCircle } from "react-icons/bi";
 import { IoBasket } from "react-icons/io5";
+import DropdownFunc from "../Functions/Dropdown";
 
 function Header(props) {
   const style = { color: "white", fontSize: "1em" };
+  let display = false;
+
+  function changeBool(bool) {
+    return bool = true;
+  }
+
   return (
-    <div className="header">
+    <header className="header">
       <div className="basket">
         <Link className="link" to="basket-page">
           <IoBasket className="basket-btn"></IoBasket>
@@ -28,15 +35,17 @@ function Header(props) {
       </Link>
       <h2 className="header-title1">Alexander Richard Tristram</h2>
 
-      <div className="navigation">
+      <nav className="navigation">
         <ul className="list">
           {/* <button
             className="list-child"
-            onClick={() => props.setDisplay("true")}
-          >
+            onClick={() => {changeBool(display) 
+            }}
+            >
+            {console.log(display)} 
             Filter photos by country:
           </button>
-          <DropdownFunc display={props.display} /> */}
+          <DropdownFunc display={display} /> */}
           <Link className="link" to="all-photos">
             <li className="list-child">All Photographs</li>
           </Link>
@@ -47,8 +56,8 @@ function Header(props) {
             <li className="list-child">purchase here</li>
           </Link>
         </ul>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 }
 
