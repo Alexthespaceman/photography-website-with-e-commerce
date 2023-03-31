@@ -1,11 +1,13 @@
 function PaymentScreen(props) {
   let { countries, photoNumbers } = props;
-  return (
-    <div className="filtered-photos-title">
-      {countries
+  let countryCount = countries
         .filter((item) => {
           return photoNumbers.includes(item.photo);
         })
+  let count = countryCount.length;
+  return (
+    <div className="filtered-photos-title">
+      {countryCount
         .map((country) => {
           return (
             <div className="filtered-photo-box">
@@ -16,6 +18,7 @@ function PaymentScreen(props) {
             </div>
           );
         })}
+        <p className="total">Total: £{count *25}</p>
     </div>
   );
 }
