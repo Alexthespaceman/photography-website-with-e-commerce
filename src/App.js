@@ -242,7 +242,7 @@ class App extends Component {
         description: "Right too the very top. Central India",
       },
       {
-        photo: 1,
+        photo: 62,
         country: "india",
         image: [photo38],
         description: "Goan waterfall. Goa, west India",
@@ -290,7 +290,7 @@ class App extends Component {
         description: "Dozy sloth, Costa Rica",
       },
       {
-        photo: 1,
+        photo: 63,
         country: "costa",
         image: [photo30],
         description: "1000 year old tree, Costa Rica",
