@@ -2,6 +2,7 @@ function PaymentScreen(props) {
   let { countries, photoNumbers } = props;
   let countryCount = countries
         .filter((item) => {
+          console.log(item.photo)
           return photoNumbers.includes(item.photo);
         })
   let count = countryCount.length;

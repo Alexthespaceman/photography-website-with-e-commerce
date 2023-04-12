@@ -44,8 +44,8 @@ function Header(props) {
             >
             {console.log(display)} 
             Filter photos by country:
-          </button>
-          <DropdownFunc display={display} /> */}
+          </button> */}
+          <DropdownFunc />
           <Link className="link" to="all-photos">
             <li className="list-child">All Photographs</li>
           </Link>

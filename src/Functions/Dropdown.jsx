@@ -24,8 +24,8 @@ function DropdownFunc(props) {
   const { display } = props;
   return (
     <div>
-      <Dropdown
-        className={`drop-down${display === true ? "-yes" : ""}`}
+        <Dropdown
+        className={`drop-down-yes`}
         controlClassName="drop-down-style"
         menuClassName="drop-down-place-holder"
         onChange={defaultOption}
